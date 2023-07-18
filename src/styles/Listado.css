@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+*{
+   
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    display: flex;
+    height: 100%;
+}
+
+.card{
+    width: 300px;
+    background-color: #8404ce;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgb(253, 254, 254);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}   
+
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.left-content{
+    flex-basis: 80%;
+}
+
+.right-content{
+    width: 100%;
+    text-align:center;
+    color: white;
+    position: fixed; 
+    top: 70px;
+    right: 10px; 
+  }
+  .right-content img{
+    margin: 0.5rem;
+    height: 100%;
+  }
+  .right-content h1{
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+
+
+
+
+
+
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 1rem auto;
+  }
+
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    box-shadow: 4px 4px 4px #21212120;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.01);
+    box-shadow:0 0 15px 0 #21212170;
+  }
+
+  .pokemon-imagen {
+    width: 150px;
+    height: 150px;
+    margin: 5px 0;
+  }
+
+  .tag {
+    background-color: #26e;
+    color: #f2f2f2;
+    padding: 4px 6px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+
+  .puntos {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+  }
+
+  .titulo-seccion {
+    font-weight: 500;
+  }
+
+  .modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+    transition: all 0.6s;
+    z-index: 1;
+  }
+
+  .modal-body {
+    background-color: #fff;
+    width: 40%;
+    min-width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    padding: 1rem;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .imagen-container {
+    display: grid;
+    place-items: center;
+  }
+
+  .titulo-seccion {
+    font-weight: 500;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .stats > section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+  }
+
+  .data {
+    display: grid;
+    padding: 0 .5rem;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .data .titulo {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  .data section {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 4px 4px 4px #21212120;
+  }
+
+  .imagen-detalle {
+    width: 300px;
+    aspect-ratio: 8/10;
+  }
+  
+  .descripcion {
+    width: 250px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .Login{
+    font-weight: bold;
+    color: #000000;
+    align-items: center;
+    background-color: aliceblue;
+    height: 500px;
+    width: 500px;
+    padding: 10%;
+}
+
+
+
+.contenedor-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 80vw;
+    min-height: 95vh;
+}
+
+.central-login {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-login {
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.imagent {
+    width: 250px;
+}
+
+.id-login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #8404ce;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+.id-login  input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.id-login  input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+.id-login  button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:white;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #000000;
+    box-shadow: 0 5px 5px rgb(253, 254, 254);
+    
+    margin-top: 10px;
+}
+
+.id-login  button:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
+
+  
